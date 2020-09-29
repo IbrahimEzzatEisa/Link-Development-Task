@@ -1,0 +1,155 @@
+<!------------------------- navbar and sidebar  -------------->
+<div class="site-wrap">
+  <header class="site-navbar  bg-white js-sticky-header site-navbar-target"
+    role="banner">
+    <div class="container">
+      <div class="row ">
+        <div class="d-inline d-md-none mr-md-0 ml-auto mt-md-0  "><a class="site-menu-toggle  ">
+          </a>
+          <!-------------- open sidebar menu ------------------->
+          <i class="fa fa-bars fa-2x  "
+            (click)="open()"
+            *ngIf="bar"></i>
+
+        </div>
+
+        <div class="col-md-9  d-none d-md-block">
+          <nav class="site-navigation   "
+            role="navigation">
+
+            <!----------------Items of menu ---------------------->
+            <ul class="site-menu main-menu js-clone-nav mr-auto">
+              <li>
+
+                <a class="nav-link "
+                  [routerLinkActive]="['active']"
+                  [routerLink]="['/home']">
+                  Home
+                </a>
+              </li>
+
+              <li><a class="nav-link ">
+                  Who We Are</a>
+              </li>
+              <!----------dropdown --------------->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false">
+                  What We Do
+                </a>
+                <div class="dropdown-menu"
+                  aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item"
+                    href="#">Action</a>
+                  <a class="dropdown-item"
+                    href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item"
+                    href="#">Something else here</a>
+                </div>
+              </li>
+
+              <li><a class="nav-link ">
+                  Get Involved</a>
+              </li>
+
+              <!----------dropdown -->
+               <li class="nav-item dropdown"   >
+                  <a  class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Media Center
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item"  [routerLink]="['newsdetails']">News Details</a>
+                    <a class="dropdown-item"  [routerLink]="['newslisting']"> News Listing</a>
+                  </div>
+                </li> 
+
+              
+              <li><a class="nav-link ">
+                  Contact Us</a>
+              </li>
+
+            </ul>
+
+          </nav>
+
+
+        </div>
+        <div class="col-md-3">
+          <!------------ icon search-->
+          <a class="text-left">
+            <i class="fa fa-search"></i>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+
+
+<!------------------ Sidebar  -------------->
+
+<div class="sidebar-container fixed-top"
+  data-aos="fade-down-right"
+  *ngIf="sidebar">
+  <div class="sidebar-logo text-right">
+    <!------------------close Slidebar ------------------>
+    <i class="fa fa-window-close fa-2x"
+      aria-hidden="true"
+      (click)="close()"></i>
+
+  </div>
+
+  <!-----------------sidebar item ------------------->
+  <ul class="sidebar-navigation">
+    <li>
+      <a [routerLink]="['/home']">
+        Home
+      </a>
+    </li>
+
+    <li>
+      <a>
+        About Us
+      </a>
+    </li>
+
+    <li class="header">What We Do </li>
+    <li>
+      <a>
+        items 1
+      </a>
+    </li>
+
+
+    <li>
+      <a>
+        Gey Involved
+      </a>
+    </li>
+
+    <li class="header">Media Center </li>
+    <li>
+      <a [routerLink]="['newsdetails']">
+        >News Details </a>
+    </li>
+
+    <li>
+      <a [routerLink]="['newslisting']">
+        >News Details </a>
+    </li>
+    <li>
+      <a>
+        Contact Us
+      </a>
+    </li>
+
+  </ul>
+</div>
+<!---------------------------End Sidebar ---------------------------->

@@ -1,0 +1,83 @@
+<!------------------------ -----  section   section---------------------->
+<section class="card-section spad text-center section-four">
+  <div class="container ">
+<!------------------------ first row -------------->
+<div class="row justify-content-center category" >
+  <div class="col-md-12">
+    <form>
+      <div class="form-row"  >
+        <div class="col-md-3 ">
+          <!------------------------button dropdown ----------------->
+           <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" >
+            <option selected> Category</option>
+            <option *ngFor="let categoryItem of categorys" >{{categoryItem.name}}</option>
+          </select> 
+        </div>
+      
+        <div class="col-md-9 ">
+          <div class="input-group">
+            <!-----------search input -------------->
+            <input type="text" class="form-control"  placeholder="title"  >
+            <div class="col-md-1">
+              <button type="submit" class="btn btn-primary">
+                <i class="fa fa-search"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+     
+      </div>
+    
+    
+    </form>
+  </div>
+
+  
+  
+
+</div>
+<!-------------End first row ------------------>
+
+<!-------------------- second row ----------------->
+    <div class="row justify-content-center">
+   
+   <div class="card-group">
+<!-------------------------------------card one ----------------->
+    <div class="col-lg-4 col-md-4" *ngFor="let articalesItem of articales"  >
+        <div class="card " 
+        [ngStyle]="{'background':'linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.2) 100%),url('+articalesItem.urlToImage+')'}" > 
+
+          <div class="card-body">
+          
+            <p class="card-text">
+              {{articalesItem.title}}
+            </p>
+
+            <p class="card-text-desc">
+              {{articalesItem.description}}
+            </p>
+
+            <p class="card-text-content">
+              {{articalesItem.content}}
+            </p>
+          </div>
+          <div class="card-footer"    >
+            <button type="button"
+              class="btn btn-light " >Read More</button>
+          </div>
+
+      </div>
+  </div>
+  
+   </div>
+<!-- button load more-->
+   <button type="button" class="btn btn-secondary btn-lg btn-block"> Load More</button>
+
+  </div>
+
+  <!------------------------ End Eow --------------->
+     
+  </div>
+</section>
+<!-------------------------- End Card section  ------------------------->

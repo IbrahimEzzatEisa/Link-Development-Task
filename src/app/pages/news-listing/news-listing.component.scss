@@ -1,0 +1,84 @@
+
+
+/* sections*/
+section {
+    margin-top: 10%;
+    .category{
+        margin-bottom: 25px;
+    }
+    .btn-primary{
+        background-color: #00698f51;
+        color: white;
+        border: 0;
+        height: 38px;
+        margin-left: -10px;
+        width: 69px;
+    
+    }
+      /*  Card  One*/
+      .card{
+        height: 100%;
+         padding-bottom: 20px;
+        border-radius: 0 ;
+        border: transparent;
+        text-align: left;
+        &:hover{
+            background: #7bc242 !important ;
+            color: white;
+            .btn-secondary{
+                    color: white;
+                    background-color: transparent;
+                    border: 1px solid white;
+                }
+        }
+       
+    .card-text{
+        font-size: 11px;
+        text-align: left;
+        color: white;
+    }
+    .card-text-desc{
+        font-size: 12px;
+        text-align: left;
+        color: white;
+
+
+
+    }
+    .card-text-content{
+        font-size: 13px;
+        text-align: left;
+        color: white;
+
+    }
+
+            /* card footer*/
+            .card-footer{
+                background-color: transparent;
+                    border: 0;
+                    .btn-secondary{
+                        border-radius: 0;
+                        margin-bottom: 30px;
+                        &:hover{
+                            color: white;
+                            background-color: transparent;
+                            border: 1px solid white;
+                        }
+                    
+                    }
+                    .btn-light{
+                        color: white;
+                        background-color: transparent;
+                        border: 1px solid white;
+                        border-radius: 0;
+                        margin-bottom: 30px;
+                    }
+                }
+            
+    }
+}
+/* button*/
+.btn-lg{
+ margin-top: 20px;
+ margin-bottom: 20px;
+}

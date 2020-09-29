@@ -1,0 +1,93 @@
+
+/* sections*/
+
+.card-section {
+    margin-top: 10%;
+    padding-left: 9%;
+    /* img media object*/
+img {
+    width: 200px;
+    height: 210px;
+    margin-left: 10px;
+
+}
+p{
+    text-align: left;
+    font-size: 12px;
+    margin-left: 20px;
+}
+h5 {
+    text-align: left;
+    font-size: 15px;
+    color: #008996;
+    margin-left: 10px;
+
+}
+.date{
+    color: #2125299c;
+    font-size: 12px;
+    float: left;
+    margin-left: 10px;
+
+}
+
+
+}
+
+
+/* intersed card*/
+.sections-interstedCard{
+    padding-left: 10%;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    .card {
+        height: 45vh;
+    }
+        .one{
+            background-image: url('../../../assets/imgs/dubi.jpg') ;
+            background-size: cover;
+        
+        }
+        .two {
+            background-image: url('../../../assets/imgs/tw.jpg') ;
+            background-size: cover;
+
+        }
+        .three {
+            background-image: url('../../../assets/imgs/3.jpg') ;
+            background-size: cover;
+        }
+
+        .content{
+            background-color: #008996e6 !important;
+            color: white;
+            width: 95%;
+            padding: 27px;
+            margin: 19px;
+
+
+           }
+
+           /*     pdf download*/
+           .card-header{
+            background: #c8d6e5;
+            border: 0;
+            margin-top: 10px;
+            margin-bottom: 30px;
+            font-size: 11px;
+            .icon{
+                color: white;
+                margin-left: 41%;
+                background: #7bc242;
+    
+            }
+
+           }
+           h2 {
+               color: #008996;
+               font-weight: 200;
+               text-transform: uppercase;
+
+           }
+    
+}
